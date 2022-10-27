@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moosic</title>
+	<link rel="stylesheet" href="main.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/0bb95de320.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label >Repertoire Records</label>
+        <ul>
+            <li><a  href='index.html'> Tasks</a></li>
+            <li><a class="active"href='pieces.html'>Pieces</a></li>
+            <li><a href='#'>Timer</a></li>
+        </ul>
+    </nav>
+
+    <main class="app">
+		<section class="create-rep">
+			<form id="new-form-rep">
+            <div class="info">
+				<input 
+					type="text" 
+					placeholder="Piece name"
+					name="pieceName"
+					id="pieceName"/>
+                <input 
+                type="text" 
+                placeholder="Composer"
+                name="pieceComposer"
+                id="pieceComposer"/>
+                <input 
+                type="text" 
+                placeholder="Opus"
+                name="pieceOpus"
+                id="pieceOpus"/>
+                <input 
+                type="text" 
+                placeholder="Date ex. 10/27/2022"
+                name="pieceDate"
+                id="videoDate"/>
+                <input type="submit" value="Add Rep" />
+            </div>
+            
+			</form>
+		</section>
+
+		<section class="rep-list">
+			<h4>Repertoire</h4>
+			<div class="list" id="rep-list"></div>
+		</section>
+
+	</main>
+    <script src="pieces.js"></script>
+</body>
+</html>
